@@ -40,3 +40,61 @@ int main()
 
     return 0;
 }
+
+//solução
+
+#include <stdio.h>
+
+float calcula_media (float valor1, float valor2)
+{
+    float media;
+    media = (valor1 + valor2)/2;
+    
+    return media;
+}
+int main()
+{
+    int matricula;
+    float P1, P2, Trab1, Trab2, medprova, medtrab, medfinal;
+    printf ("\nDigite a matricula do aluno: ");
+    scanf ("%d", &matricula);
+    printf ("\nDigite a nota da P1: ");
+    scanf ("%f", &P1);
+    printf ("\nDigite a nota da P2: ");
+    scanf ("%f", &P2);
+    printf ("\nDigite a nota do Trab1: ");
+    scanf ("%f", &Trab1);
+    printf ("\nDigite a nota do Trab2: ");
+    scanf ("%f", &Trab2);
+
+    medprova = calcula_media (P1, P2);
+    medtrab = calcula_media(Trab1, Trab2);
+    medfinal = calcula_media (medprova, medtrab);
+
+    printf ("\nMatricula: %d\n", matricula);
+    printf ("\nMedia das provas: %.1f\n", medprova);
+    printf ("\nMedia dos trabalhos: %.1\n", medtrab);
+    printf ("\nMedia final: %.1\n", medfinal);
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
