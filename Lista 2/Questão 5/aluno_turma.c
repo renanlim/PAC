@@ -79,6 +79,31 @@ int main()
     return 0;
 }
 
+//escrita no ṕapel para prova
+
+#include <stdio.h>
+
+float calcula_media (float valor1, float valor2)
+{
+    return (valor1 + valor2)/2;
+}
+int main()
+{
+    int matricula;
+    float P1, P2, Trab1, Trab2, medprova, medtrab, medfinal;
+    printf ("\nDigite a matricula, prova 1, prova 2, trabalho 1, trabalho 2: ");
+    scanf ("%d%f%f%f%f", &matricula, &P1, &P2, &Trab1, &Trab2);
+
+    medprova = calcula_media (P1, P2);
+    medtrab = calcula_media(Trab1, Trab2);
+    medfinal = calcula_media (medprova, medtrab);
+
+    printf ("\nMatricula: %d\nMedia provas: %.1f\nMedia dos trabalhos: %.1f\nMedia final: %.1f\n", matricula, medprova, medtrab, medfinal);
+
+    return 0;
+}
+
+
 
 
 
