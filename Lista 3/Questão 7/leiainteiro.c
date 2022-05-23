@@ -2,6 +2,19 @@
 
 int calculaMaiorNum (int num1, int num2, int num3)
 {
+    int maior = num1;
+
+    if (num2 > maior){
+        maior = num2;
+    };
+
+    if(num3 > maior){
+        maior = num3;
+    }
+
+    return maior;
+
+/* 
  if (num1 > num2 && num1 > num3)
     {
         return num1;
@@ -15,7 +28,7 @@ int calculaMaiorNum (int num1, int num2, int num3)
             if (num3 > num1 && num3 > num2)
             {
                 return num3;
-            }
+            } */
 }
 int main ()
 {
