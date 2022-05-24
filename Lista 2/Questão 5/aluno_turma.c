@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// minha resolução
 float calcula_media_prova (float P1, float P2)
 {
     float media_prova, soma_prova;
