@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-int converte_hora_min (int hora, int min)
-{
-    int converte;
-    converte = hora * 60 + min;
-    return converte;
-}
 void calcula_atraso (int horaprevisto, int minprevisto, int horaefetivo, int minefetivo)
 {
     int totalprevisto, totalefetivo, totalatraso;
