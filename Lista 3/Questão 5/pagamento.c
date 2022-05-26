@@ -45,8 +45,8 @@ return descontoIR;
 }
 int main ()
 {
-    int matr;
-    float valorh, qtdh, quantdep, temposerv, salLiquido, salbase, descontoIR, descontoINSS;
+    int matr, quantdep,temposerv;
+    float valorh, qtdh, salLiquido, salbase, descontoIR, descontoINSS;
     printf ("\nInforme a matricula: ");
     scanf ("%d", &matr);
     printf ("\nInforme o valor da hora de trabalho: ");
@@ -54,9 +54,9 @@ int main ()
     printf ("\nInforme a quantidade de horas trabalhadas: ");
     scanf ("%f", &qtdh);
     printf ("\nInforme a quantidade de dependentes: ");
-    scanf ("%e", &quantdep);
+    scanf ("%d", &quantdep);
     printf ("\nInforme o tempo de serviço (anos): ");
-    scanf ("%e", &temposerv);
+    scanf ("%d", &temposerv);
 
     printf ("\nMatricula: %d", matr);
     salbase = calculaSalBase (valorh, qtdh);
