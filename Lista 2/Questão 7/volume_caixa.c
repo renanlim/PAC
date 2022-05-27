@@ -1,20 +1,16 @@
 #include <stdio.h>
 
-int calcula_volume_caixa (int lA, int lB, int lC)
-{
-    int volume_caixa = lA * lB * lC;
-
-    return volume_caixa;
+float calcula_volume_caixa (float lA, float lB, float lC)
+{ 
+    return volume_caixa = lA * lB * lC;
 }
 int calcula_volume_cilindro (int h, int r)
 {
-    int volume_cilindro = 3.14 * h * r * 2;
-
-    return volume_cilindro;
+    return volume_cilindro = 3.14 * h * r * 2;
 }
 int main ()
 {
-    int ladoA, ladoB, ladoC, h, r;
+    float ladoA, ladoB, ladoC, h, r;
     printf ("\nDimensão da caixa (lado a): ");
     scanf ("%d", &ladoA);
     printf ("\nDimensão da caixa (lado b): ");
