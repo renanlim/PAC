@@ -1,36 +1,30 @@
 #include <stdio.h>
 #include <math.h>
 
-float calcula_distancia (float xA, float yA, float xB, float yB)
+float calcula_distancia (float x1, float y1, float x2, float y2)
 {
     float modulo;
-    modulo = sqrt(pow(xA - xB, 2) + pow(yA - yB, 2));
+    modulo = sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2));
 
     return modulo;
 }
 int main ()
 {
-    float xA, yA, xB, yB, xC, yC, soma_do_perimetro;
-    printf("\nDigite a coordenada do ponto xA: ");
-    scanf ("%f", &xA);
-    printf("\nDigite a coordenada do ponto yA: ");
-    scanf ("%f", &yA);
-    printf("\nDigite a coordenada do ponto xB: ");
-    scanf ("%f", &xB);
-    printf("\nDigite a coordenada do ponto yB: ");
-    scanf ("%f", &yB);
-    printf("\nDigite a coordenada do ponto xC: ");
-    scanf ("%f", &xC);
-    printf("\nDigite a coordenada do ponto yC: ");
-    scanf ("%f", &yC);
+    float xA, yA, xB, yB, xC, yC, d1, d2, d3, perimetro;
+    printf("\nDigite as coordenadas X e Y do ponto A: ");
+    scanf ("%f%f", &xA, &yA);
+     printf("\nDigite as coordenadas X e Y do ponto B: ");
+    scanf ("%f%f", &xB, &yB);
+     printf("\nDigite as coordenadas X e Y do ponto C: ");
+    scanf ("%f%f", &xC, &yC);
 
-    float d1 = calcula_distancia (xA, yA, xB, yB);
-    float d2 = calcula_distancia (xB, yB, xC, yC);
-    float d3 = calcula_distancia (xC, yC, xA, yA);
+    d1 = calcula_distancia (xA, yA, xB, yB);
+    d2 = calcula_distancia (xB, yB, xC, yC);
+    d3 = calcula_distancia (xC, yC, xA, yA);
 
-    soma_do_perimetro = d1 + d2 + d3;
+    perimetro = d1 + d2 + d3;
 
-    printf ("\nO perímetro deste triangulo é: %.f\n", soma_do_perimetro);
+    printf ("\nO perímetro deste triangulo é: %.f\n", perimetro);
 }
 
 
