@@ -9,7 +9,7 @@ float processarDow(int qtdDow){
         if(tamDow <= 2){
             tamDow2MB++;
         }
-        tamTotDow = tamTotDow + tamDow;
+        tamTotDow += tamDow;
         i++;
     }
     printf("Dowloads de até 2MB: %f", tamDow2MB);
@@ -23,14 +23,14 @@ int main(){
     printf("Quantidade de dowload desejada: ");
     scanf("%d", &qtdDowDes);
     while (qtdDowDes != 0){
-        tamanho = tamanho + processarDow(qtdDowDes);
+        tamanho += processarDow(qtdDowDes);
         printf("Quantidade de dowload desejada: ");
         scanf("%d", &qtdDowDes);
         usu++;
     }
     valor = tamanho * preco;
-    printf("Valor pago: %f", valor);
     valorMedio = valor / usu;
+    printf("Valor pago: %f", valor);
     printf("Valor médio: %f", valorMedio);
     return 0;
 }
