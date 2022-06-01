@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//questão 6
 float processarDow(int qtdDow){
     int i = 1;
     float tamDow, tamDow2MB = 0, tamTotDow = 0;
