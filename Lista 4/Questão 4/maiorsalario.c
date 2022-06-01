@@ -1,25 +1,23 @@
 #include <stdio.h>
 
-int funcionarios (int qtdFunc){
-    int matr, i;
-    float maior, sal;
-    i = 1;
-    maior = 0;
+int dadosFunc (int qtdFunc){
+    int matr, i = 1;
+    float maior = 0, sal;
     while (i <= qtdFunc){
         printf ("Matricula e salario: ");
         scanf ("%d%f", &matr, &sal);
-        i++;
         if (sal > maior) {
             maior = sal;
         }
+        i++;
     }
     return maior;
 }
 int main (){
-    int qtdFunc;
+    int qtd;
     printf ("Quantidade de funcionarios: ");
-    scanf ("%d", &qtdFunc);
+    scanf ("%d", &qtd);
 
-    printf ("Maior salario: %d",funcionarios (qtdFunc));
+    printf ("Maior salario: %d",dadosFunc(qtd));
     return 0;
 }
