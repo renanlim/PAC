@@ -2,20 +2,18 @@
 
 //tabuada de 1 a 10
 
-void tabuada (int N) {
-    int calc, i;
-    i = 1;
-    while (i <= 10){
+void tabuada(int N){
+    int calc, i = 1;
+    while(i <= 10){
         calc = N * i;
-        printf ("%d * %d = %d\n", N, i, calc);
+        printf("%d * %d = %d\n", N, i, calc);
         i++;
     }
 }
-int main (){
-
+int main(){
     int num = 1;
-    while (num <= 10){
-        tabuada (num);
+    while(num <= 10){
+        tabuada(num);
         num++;
     }
     return 0;
