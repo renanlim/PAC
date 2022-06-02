@@ -17,7 +17,8 @@ void alteracaoArea(float area1, float area2)
 }
 int main()
 {
-    float h, pinicial, pfinal, area1, area2;
+    int h;
+    float pinicial, pfinal, area1, area2;
     printf("\nInforme altura, peso no inicio do ano e peso no final do ano: ");
     scanf("%f%f%f", &h, &pinicial, &pfinal);
     area1 = calculaArea (h, pinicial);
