@@ -21,6 +21,6 @@ int main()
     if(formapg == 3)
         pagamento_dinheiro(despesa);
     else
-        printf ("\nNao há troco");
+        printf("\nNao há troco");
     return 0;
 }
