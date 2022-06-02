@@ -1,26 +1,25 @@
 #include <stdio.h>
 
-void calculaEleitor (int idade)
+void calculaEleitor(int idade)
 {
-    if (idade < 16)
+    if(idade < 16)
     {
-        printf ("\nNão eleitor\n");
+        printf("\nNão eleitor\n");
     }       
-    else if (idade < 18 || idade > 70)
+    else if(idade < 18 || idade > 70)
     {
-        printf ("\nEleitor facultativo\n");
+        printf("\nEleitor facultativo\n");
     }
     else
     {
-        printf ("\nEleitor\n");
+        printf("\nEleitor\n");
     } 
 }
-int main ()
+int main()
 {
     int idade;
-    printf ("\nInforme sua idade: ");
-    scanf ("%d", &idade);
-
-    calculaEleitor (idade);
+    printf("\nInforme sua idade: ");
+    scanf("%d", &idade);
+    calculaEleitor(idade);
     return 0;
 }
