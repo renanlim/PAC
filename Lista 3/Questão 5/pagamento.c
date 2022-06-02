@@ -40,13 +40,13 @@ int main()
     scanf("%d%f%f%d%d", &matr, &valorh, &qtdh, &quantdep, &temposerv);
     
     printf("\nMatricula: %d", matr);
-    salbase = calculaSalBase (valorh, qtdh);
-    printf("\nSalario base: %.1f\tBonus: %.1f\tAuxilio creche: %.1f", salbase, calculaBonus (temposerv, salbase), calculaAuxCreche (quantdep));
-    printf("\nDesconto INSS: %.1f\tDesconto Imposto de Renda: %.1f", calculaDescontoINSS (salbase), calculaImpostoRenda (salbase));
-    descontoINSS = calculaDescontoINSS (salbase);
-    descontoIR = calculaImpostoRenda (salbase);
-    salLiquido = salbase + calculaBonus (temposerv, salbase) + calculaAuxCreche (quantdep) - descontoIR - descontoINSS;
-    printf ("\nSalario liquido: %.1f\n", salLiquido);
+    salbase = calculaSalBase(valorh, qtdh);
+    printf("\nSalario base: %.1f\tBonus: %.1f\tAuxilio creche: %.1f", salbase, calculaBonus(temposerv, salbase), calculaAuxCreche(quantdep));
+    printf("\nDesconto INSS: %.1f\tDesconto Imposto de Renda: %.1f", calculaDescontoINSS(salbase), calculaImpostoRenda(salbase));
+    descontoINSS = calculaDescontoINSS(salbase);
+    descontoIR = calculaImpostoRenda(salbase);
+    salLiquido = salbase + calculaBonus(temposerv, salbase) + calculaAuxCreche(quantdep) - descontoIR - descontoINSS;
+    printf("\nSalario liquido: %.1f\n", salLiquido);
 
 return 0;
 }
