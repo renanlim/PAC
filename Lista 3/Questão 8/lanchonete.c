@@ -1,39 +1,26 @@
 #include <stdio.h>
 
-void pagamento_dinheiro ( float valordesp)
+void pagamento_dinheiro(float valordesp)
 {
     float valorpago, troco;
-    
-    printf ("\nInfome o valor pago em reais: ");
-    scanf ("%f", &valorpago);
+    printf("\nInfome o valor pago em reais: ");
+    scanf("%f", &valorpago);
     troco = valorpago - valordesp;
-    if (troco > 0)
-    {
-        printf ("\nTroco: %.1f", troco);
-    }
-    else if (troco < 0)
-    {
-        printf ("\n Valor pago insuficiente");
-    }
+    if(troco == 0)
+        printf("\nNão há troco");
     else
-        printf ("\nNão há troco");
+        printf("\nTroco: %.1f", troco);
 }
-int main ()
+int main()
 {
     float despesa;
     int formapg;
-    printf ("\nInforme o valor da despesa: ");
-    scanf ("%f", &despesa);
-    printf ("\nQual a forma de pagamento: ");
-    printf ("\n[1]Debito");
-    printf ("\n[2]Credito");
-    printf ("\n[3]Dinheiro\n");
-    scanf ("%d", &formapg);
-
-    if (formapg == 3)
-    {
+    printf("\n[1]Debito\t[2]Credito\t[3]Dinheiro");
+    printf("\nInforme o valor da despesa e a forma de pagamento: ");
+    scanf("%f%d", &despesa, &formapg);
+    if(formapg == 3)
         pagamento_dinheiro(despesa);
-    }
     else
         printf ("\nNao há troco");
+    return 0;
 }
