@@ -1,33 +1,27 @@
 #include <stdio.h>
 
-int leValidaQtd (){
+int leValidaQtd(){
     int qtdfunc;
-    printf ("Quantidade de funcionarios: ");
-    scanf ("%d", &qtdfunc);
-    if (qtdfunc > 0){
+    printf("Quantidade de funcionarios: ");
+    scanf("%d", &qtdfunc);
+    if(qtdfunc > 0)
         return qtdfunc;
-    }
-    printf ("Quantidade invalida");
-    return 0;
 }
-int funcionarios (int qtdfunc){
-    int matr, i;
-    float totSal, sal;
-    i = 1;
-    totSal = 0;
-    while (i <= qtdfunc){
-        printf ("Matricula e salario: ");
-        scanf ("%d%f", &matr, &sal);
+int funcionarios(int qtdfunc){
+    int matr, i = 1;
+    float totSal = 0, sal;
+    while(i <= qtdfunc){
+        printf("Matricula e salario: ");
+        scanf("%d%f", &matr, &sal);
         i++;
-        totSal = totSal + sal;
+        totSal += sal;
     }
     return totSal;
 }
-int main (){
+int main(){
     
-    int qtdFunc = leValidaQtd ();
-    if (qtdFunc != 0){
-        printf ("Soma dos salarios: %d",funcionarios (qtdFunc));
-    }
+    int qtdFunc = leValidaQtd();
+    if(qtdFunc != 0)
+        printf("Soma dos salarios: %d",funcionarios(qtdFunc));
     return 0;
 }
