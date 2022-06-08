@@ -12,7 +12,8 @@ int main ()
     scanf ("%f%f", &xA, &yA);
      printf("\nDigite as coordenadas X e Y do ponto B: ");
     scanf ("%f%f", &xB, &yB);
-     printf("\nDigite as coordenadas X e Y do ponto C: ");
+     printf("\nDigite as coordenadas X e Y do ponto C: ");0
+     
     scanf ("%f%f", &xC, &yC);
 
     d1 = calcula_distancia (xA, yA, xB, yB);
