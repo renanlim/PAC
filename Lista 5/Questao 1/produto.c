@@ -1,3 +1,12 @@
+1) Faça apenas as duas funções auxiliares abaixo.
+a) Faça a função le_valida_tipo que leia e valide o tipo do produto (1-fruta, 2-legume, 3-verdura). A função
+deverá retornar o tipo validado.
+b) Faça uma função, utilizando a função acima, que receba a quantidade de produtos comercializados por
+uma loja como parâmetro. A função deverá ler para cada produto o código e o tipo (1-fruta, 2-legume,
+3-verdura), descobrir a quantidade de produtos que são do tipo 1, a quantidade de produtos que são do
+tipo 2 e a quantidade de produtos que são do tipo 3. Para isto a função irá guardar as quantidades nas
+variáveis cujos endereços são fornecidos na chamada da função
+
 #include <stdio.h>
 
 int le_valida_tipo(){
