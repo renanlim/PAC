@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define ALU 3
+#define ALU 20
 #define MAXC 31
 struct aluno{
     float mediaAluno;
