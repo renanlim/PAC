@@ -1,3 +1,14 @@
+6) Um banco possui as seguintes informações dos seus clientes: número da conta do cliente e saldo do cliente.
+Faça um programa que leia os dados dos clientes e exiba para cada cliente: número da conta, saldo do
+cliente e mensagem informando se o saldo dele está acima do saldo médio dos clientes do banco, abaixo
+do saldo médio dos clientes do banco ou se é igual ao saldo médio dos clientes do banco. Término da leitura:
+número da conta do cliente = 0. Considere que o banco possui, no máximo, 10573 clientes. O seu programa
+deverá utilizar a função abaixo.
+a) Função exibe(): recebe como parâmetros um vetor de struct, já preenchido, a quantidade de clientes do
+banco e o saldo médio do banco e exibe para cada cliente o número da conta, saldo do cliente e
+mensagem informando se o saldo dele está acima do saldo médio dos clientes do banco, abaixo do saldo
+médio dos clientes do banco ou se é igual ao saldo médio dos clientes do banco.
+
 #include <stdio.h>
 #define TOT 10573
 struct cliente
