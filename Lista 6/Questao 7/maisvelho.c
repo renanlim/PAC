@@ -1,3 +1,11 @@
+7) Faça um programa para processar os 1000 funcionários de uma empresa. Para cada funcionário, o programa
+deverá ler o código do departamento no qual ele trabalha (número inteiro de 10 a 20) e a idade. O programa
+deverá exibir a matrícula e a idade do funcionário mais velho de cada departamento. Faça as seguintes
+funções:
+a) inicializa(): recebe como parâmetro um vetor de struct e inicializa-o apropriadamente.
+b) exibe(): recebe como parâmetro um vetor de struct já preenchido e exiba a matrícula e a idade do
+funcionário mais velho de cada departamento.
+
 #include <stdio.h>
 #define TOT 11
 #define FUNC 1000;
