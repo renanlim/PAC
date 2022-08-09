@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define TOT 3
+#define TOT 20
 #define MAXC 21
 #define COL 4
 struct produto
