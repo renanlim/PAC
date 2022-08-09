@@ -1,5 +1,33 @@
+5. Uma loja possui as seguintes informações:
+• Sobre os 20 produtos comercializados:
+o o código do produto (inteiro)
+o o nome do produto (máximo de 20 caracteres válidos)
+o a quantidade em estoque do produto (inteiro)
+	
+• Sobre as movimentações:
+o o código do produto (inteiro)
+o o tipo de operação (caracter): ‘s’ (solicitação) ou ‘d’ (devolução)
+o a quantidade solicitada ou devolvida do produto (inteiro)
+Término da leitura das movimentações: código do produto = 0.
+	
+Faça um programa que leia as informações acima e:
+• atualize a quantidade em estoque dos produtos;
+• exiba na tela, para cada produto, código do produto, nome do produto, a quantidade total solicitada, a
+quantidade total pendente, a quantidade total devolvida e quantidade atual em estoque após as
+movimentações;
+• ao final, exiba quantos produtos estão com o estoque zerado.
+Observação: quantidade pendente em uma solicitação é a quantidade que não foi atendida pelo fato da
+quantidade em estoque do produto ser inferior à quantidade solicitada. Exemplo:
+quantidade em estoque do produto = 20, quantidade solicitada = 50 ➔ quantidade pendente = 30.
+	
+Obrigatoriamente, o seu programa deverá utilizar as seguintes funções auxiliares feitas por você:
+a) le_dados_produtos: realiza a leitura dos dados dos 20 produtos comercializados, preenchendo os
+parâmetros recebido;
+b) gera_saida: recebe, como parâmetros, todas as informações para gerar as saídas na tela.
+c) pelo menos mais uma função, além da main.
+	
 #include<stdio.h>
-#define TOT 3
+#define TOT 20
 #define MAXC 21
 #define COL 4
 struct produto
